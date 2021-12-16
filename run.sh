@@ -17,5 +17,5 @@ sleep 1
 kubectl apply -f result-app-service.yml
 sleep 2
 kubectl apply -f worker-app-pod.yml
-echo "Deployment completed  run # kubect get svc "
+echo "Deployment completed  run "# kubect get svc""
 ~

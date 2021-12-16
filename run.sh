@@ -19,4 +19,5 @@ sleep 2
 kubectl apply -f worker-app-pod.yml
 echo -e "\n"
 echo -e "success \n"
-echo "Deployment completed  run "# kubect get svc"\n"
+echo "Voting App deployment completed run # kubect get svc \n"
+echo -e "\n"

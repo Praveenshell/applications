@@ -2,7 +2,7 @@
 echo -e "PHP Guest Book App Deployment \n"
 kubectl apply -f https://k8s.io/examples/application/guestbook/redis-leader-deployment.yaml
 sleep 1
-Kubectl get pods
+kubectl get pods
 sleep 2
 kubectl apply -f https://k8s.io/examples/application/guestbook/redis-leader-service.yaml
 sleep 1
@@ -22,6 +22,7 @@ kubectl get pods
 sleep 1
 kubectl get services
 sleep 3
+echo -e "\n"
 echo -e "Run this command # kubectl edit service frontend \n"
 echo -e "Go to the last before line to change type ClusterIP to LoadBalancer \n"
-echoe -e "You can scale the deployment using cmd # kubectl scale deployment frontend --replicas=5 \n"
+echo -e "You can scale the deployment using cmd # kubectl scale deployment frontend --replicas=5 \n"

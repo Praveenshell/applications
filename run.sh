@@ -1,22 +1,21 @@
 #!/bin/bash
 
-Kubectl apply -f voting-app-pod.yml
+kubectl apply -f voting-app-pod.yml
 sleep 1
-Kubectl apply -f voting-app-service.yml
+kubectl apply -f voting-app-service.yml
 sleep 1
-Kubectl apply -f redis-pod.yml
+kubectl apply -f redis-pod.yml
 sleep 1
-Kubectl apply -f redis-service.yml
+kubectl apply -f redis-service.yml
 sleep 1
-Kubectl apply -f postgres-pod.yml
+kubectl apply -f postgres-pod.yml
 sleep 1
-Kubectl apply -f postgres-service.yml
+kubectl apply -f postgres-service.yml
 sleep 1
-Kubectl apply -f result-app-pod.yml
+kubectl apply -f result-app-pod.yml
 sleep 1
-Kubectl apply -f result-app-service.yml
+kubectl apply -f result-app-service.yml
 sleep 2
-Kubectl apply -f worker-app-pod.yml
-
-echo "Deployment completed"
+kubectl apply -f worker-app-pod.yml
+echo "Deployment completed  run # kubect get svc "
 ~

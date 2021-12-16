@@ -19,5 +19,5 @@ sleep 2
 kubectl apply -f worker-app-pod.yml
 echo -e "\n"
 echo -e "success \n"
-echo "Voting App deployment completed run # kubect get svc \n"
-echo -e "\n"
+echo -e "Voting App deployment completed run # kubectl get svc \n"
+echo -e "Copy the External IP and run it in the browser \n"

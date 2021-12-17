@@ -1,0 +1,17 @@
+#!/bin/bash
+echo -e "Helm Package installation \n"
+curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
+sleep 2
+chmod 700 get_helm.sh
+sleep 1
+bash get_helm.sh
+sleep 1
+echo -e "Prometheus & Grafana Package deployment \n"
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+sleep 2
+helm repo update
+sleep 3
+helm install lnd-training prometheus-community/kube-prometheus-stack
+sleep 5
+echo -e "Run this command to change service to LoadBalancer # kubectl edit svc xxx-kube-prometheus-sta-prometheus \n"
+echo -e "Run this command to change service to LoadBalancer # kubectl edit svc xxx-grafana \n"
